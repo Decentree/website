@@ -1,0 +1,13 @@
+<section class="text-center flex flex-col items-center py-13 relative" id="technology">
+	<img src="/images/stars-decoration.svg" class="z-0 absolute -top-[170px] opacity-80 w-full" alt="Stars" draggable={false} loading="lazy">
+	<div class="md:max-w-3/5 px-8 md:px-12">
+		<h2 class="text-4xl md:text-5xl my-2 z-1">Our Technology</h2>
+		<p class="text-lg z-1">
+		At Decentree, we focus on the most advanced technologies on the market. We are a young development studio that is on trend and growing with the times. 
+		Don't mess with your old ways, step into the future!
+		</p>
+  </div>
+	<div class="grid items-center justify-items-stretch gap-10 spacing-def w-full justify-evenly mt-4 z-1" style="grid-template-columns: repeat(auto-fill, 130px);">
+		{Array(12).fill(0).map((item, index) => (<img class="object-contain h-min" src={"/images/technologies/" + "logos" + (index+1) + ".png"} alt="logo" draggable={false} loading="lazy"/>))}
+	</div>
+</section>

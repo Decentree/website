@@ -1,0 +1,13 @@
+@import '_resets';
+@import '_fonts';
+@import '_burger';
+
+@windicss;
+
+.grid-def {
+  @apply grid grid-cols-14;
+}
+
+.element-def {
+  @apply col-mobile md:col-def;
+}

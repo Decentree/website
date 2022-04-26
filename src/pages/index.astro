@@ -1,0 +1,40 @@
+---
+	import BaseLayout from "../components/layouts/base.astro";
+	import Hero from "../components/modules/index/hero.astro";
+	import Navbar from "../components/elements/shared/navbar.svelte";
+	import Projects from "../components/modules/index/projects.svelte";
+	import Solutions from "../components/modules/index/solutions.astro";
+	import Technologies from "../components/modules/index/technologies.astro";
+	import Team from "../components/modules/index/team.astro";
+	import Contact from "../components/modules/index/contact.svelte";
+	import Footer from "../components/elements/shared/footer.astro";
+
+	import {projects} from "../constants/projects";
+	import {solutions} from "../constants/solutions";
+	import {members} from "../constants/members";
+
+	import { SEO } from "astro-seo";
+
+---
+<html lang="en" class="bg-primary-blue">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<SEO
+			title="Decentree - Developer studio"
+			canonical="http://decentree.com"
+			description="Decentree is a young company that specializes in the development of mobile, online, and blockchain apps. At Decentree we believe in the ability of technology to enhance people's lives on a daily basis." />
+	</head>
+	<body>
+		<BaseLayout>
+			<Navbar client:media="(max-width: 800px)"/>
+			<Hero/>
+			<Projects projects={projects} client:visible/>
+			<Solutions solutions={solutions}/>
+			<Technologies/>
+			<Team members={members}/>
+			<Contact client:visible/>
+		</BaseLayout>
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+---
+interface Props {
+    path: string;
+    className?: string;
+    alt: string;
+    width: string;
+    height: string;
+    loading?:string;
+	style?:string;
+}
+
+const {path, className, alt, width, height, loading, style} = Astro.props as Props
+---
+
+<picture>
+	<source srcset={"/images/" + path + '.avif'} type="image/avif" />
+	<source srcset={"/images/" + path + '.webp'} type="image/webp" />
+	<img
+		src={"/images/" + path + '.jpeg'}
+		alt={alt}
+		class={className || ""}
+		draggable={false}
+		width={width}
+		height={height}
+		style={style || ""}
+		loading={loading || "lazy"}
+  />
+</picture>
