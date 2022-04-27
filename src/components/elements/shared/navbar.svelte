@@ -23,7 +23,7 @@ const menuItems = [
 	<header
 		class="opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md"
 	>
-		<a href="#" class="flex flex-col justify-center"><img class="w-[90px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
+		<a href="#" class="flex flex-col justify-center"><img class="w-[100px] md:w-[110px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
 		
 		<nav class="gap-8 items-center hidden md:flex">
 			{#each menuItems as item}
@@ -32,7 +32,6 @@ const menuItems = [
 		</nav>
 		<button 
 			class="hamburger md:hidden bg-transparent border-none"
-			ref="hamburger"
 			class:active={opened}
 			aria-controls="mobile-nav"
 			aria-expanded={opened}
@@ -52,6 +51,7 @@ const menuItems = [
 
 		{#if opened}
 			<nav
+			id="mobile-nav"
 			on:touchmove|stopPropagation={(e)=>e.preventDefault()}
 			transition:slide={{
 				delay: 50,

@@ -14,7 +14,7 @@ export async function onRequestPost({ request, env }) {
         {
           to: [
             {
-              email: 'info@eterlast.com',
+              email: 'info@decentree.com',
             },
           ],
           dynamic_template_data: {

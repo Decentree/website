@@ -5,7 +5,7 @@ export default defineConfig({
     include: ['src/**/**/**/*.{html,vue,jsx,tsx,svelte,astro}'],
   },
   shortcuts: {
-    'main-input': 'block w-full py-3 px-4 text-lg rounded-md bg-secondary-blue border-2 border-primary-green text-white border-solid placeholder:text-gray-400',
+    'main-input': 'block w-full py-3 px-4 text-base md:text-lg rounded-md bg-secondary-blue border-2 border-primary-green text-white border-solid placeholder:text-gray-400',
     'spacing-def': 'px-mobile md:px-def',
     'btn-primary':
       'block w-max bg-primary-green hover:bg-secondary-green py-2 md:py-3 px-[12px] md:px-[20px] text-base font-medium uppercase rounded-md tracking-[.22em] transition transition-colors',

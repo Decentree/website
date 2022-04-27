@@ -7,9 +7,9 @@ import {IMember} from "../../../../interfaces/IMember";
 const {name, email, facebook, linkedin, imgPath} = Astro.props as IMember;
 
 ---
-<div class="bg-secondary-blue rounded-md max-w-[250px] ">
+<div class="bg-secondary-blue rounded-md max-w-[230px] md:max-w-[250px] ">
     <img class="w-full object-cover rounded-md" src={"/images/team/" + imgPath} alt={name} loading="lazy" draggable="false" />
-    <div class="px-8 py-6 h-[180px]">
+    <div class="px-8 py-6 h-[150px] md:h-[180px]">
         <h3 class="text-xl my-0 mt-3">{name}</h3><a class="text-sm text-primary-green my-0" href={"mailto:" + email}>{email}</a>
         <div class="flex flex-wrap justify-center gap-x-8 mt-4">
             {facebook && <a href={facebook} target="_blank" aria-label="facebook"><FacebookIcon /></a>}

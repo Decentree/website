@@ -3,20 +3,21 @@ interface Props {
     path: string;
     className?: string;
     alt: string;
-    width: string;
-    height: string;
+    width?: string;
+    height?: string;
     loading?:string;
 	style?:string;
+	fallback?: "jpeg" | "png";
 }
 
-const {path, className, alt, width, height, loading, style} = Astro.props as Props
+const {path, className, alt, width, height, loading, style, fallback} = Astro.props as Props
 ---
 
 <picture>
 	<source srcset={"/images/" + path + '.avif'} type="image/avif" />
 	<source srcset={"/images/" + path + '.webp'} type="image/webp" />
 	<img
-		src={"/images/" + path + '.jpeg'}
+		src={"/images/" + path + '.' + fallback || "jpeg"}
 		alt={alt}
 		class={className || ""}
 		draggable={false}

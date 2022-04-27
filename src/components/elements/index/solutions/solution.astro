@@ -1,11 +1,13 @@
 ---
 import {ISolution} from "../../../../interfaces/ISolution";
+
+import Image from "../../../elements/shared/image.astro";
 const {position, length, name, imgPath} = Astro.props as ISolution
 ---
-<div class="min-h-[450px] w-full  bg-secondary-blue rounded-md relative">
+<div class="min-h-[350px] md:min-h-[450px] w-full  bg-secondary-blue rounded-md relative">
     <div class="absolute inset-0 w-full h-full flex flex-col justify-end z-1 text-left px-8">
         <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
         <h3 class="my-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
     </div>
-    <img src={imgPath} class="inset-0 absolute w-full h-full object-cover" alt="Background" loading="lazy" draggable={false}/>
+    <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover" alt={name} loading="lazy" fallback="png"/>
 </div>

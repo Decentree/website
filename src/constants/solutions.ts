@@ -1,7 +1,7 @@
 import { ISolution } from './../interfaces/ISolution';
 export const solutions: ISolution[] = [
-    { name: "Mobile Apps", imgPath:"/images/solutions/mobileapps.png"},
-    { name: "Web Apps", imgPath:"/images/solutions/webapps.png"},
-    { name: "Block Chain", imgPath:"/images/solutions/blockchain.png"},
-    { name: "DeFi", imgPath:"/images/solutions/defi.png"}
+    { name: "Mobile Apps", imgPath:"solutions/mobileapps"},
+    { name: "Web Apps", imgPath:"solutions/webapps"},
+    { name: "Block Chain", imgPath:"solutions/blockchain"},
+    { name: "DeFi", imgPath:"solutions/defi"}
 ]
