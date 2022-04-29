@@ -10,7 +10,7 @@ const {members} = Astro.props as {members: IMember[]}
         <p class="text-lg">
         These are the studio's major leaders and founders. Each has a team of brilliant employees reporting to them, each focusing on a different aspect of our services.</p>
     </div>
-    <div class="flex flex-wrap gap-6 mt-6 justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 justify-center z-1">
         {members.map(({name, email, linkedin, imgPath, facebook })=><Member name={name} email={email} linkedin={linkedin} imgPath={imgPath} facebook={facebook} />)}
     </div>
 </section>

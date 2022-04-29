@@ -15,9 +15,9 @@
 	
 </script>
 
-<h2 class="spacing-def mt-12 text-3xl md:text-4xl" id="projects">Our Projects</h2>
+<h2 class="spacing-def pt-15 text-3xl md:text-4xl" id="projects">Our Projects</h2>
 <section class="grid-def bg-primary-blue" >
-	<div class="element-def py-6">
+	<div class="element-def py-4">
 		<Swiper
 			spaceBetween={20}
 			modules={[Navigation, A11y]}

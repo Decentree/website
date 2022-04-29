@@ -21,9 +21,9 @@ const menuItems = [
 
 <div class="fixed top-0 w-full z-30">
 	<header
-		class="opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md"
+		class="inset-0 opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md"
 	>
-		<a href="#" class="flex flex-col justify-center"><img class="w-[100px] md:w-[110px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
+		<a href="#" class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
 		
 		<nav class="gap-8 items-center hidden md:flex">
 			{#each menuItems as item}

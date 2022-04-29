@@ -9,5 +9,5 @@ const {position, length, name, imgPath} = Astro.props as ISolution
         <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
         <h3 class="my-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
     </div>
-    <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover" alt={name} loading="lazy" fallback="png"/>
+    <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover rounded-md" alt={name} loading="lazy" fallback="png"/>
 </div>

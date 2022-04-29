@@ -5,13 +5,13 @@ const { solutions } = Astro.props as {solutions: ISolution[]};
 ---
 <section class="bg-primary-blue py-10 relative text-center px-8 md:px-12 md:py-20 flex flex-col items-center" id="solutions">
 
-	<img src="/images/solutions-bg.jpeg" class=" z-0 absolute -top-[170px] opacity-80 mix-blend-exclusion w-full" style="filter: blur(4px)"  alt="Solution" draggable={false} loading="lazy">
+	<img src="/images/solutions-bg.jpeg" class=" z-0 absolute -top-[170px] opacity-80 mix-blend-exclusion " style="filter: blur(4px)"  alt="Solution" draggable={false} loading="lazy">
 	<div class="md:max-w-2/3">
 			<h2 class="text-4xl md:text-5xl my-2">Our Solutions</h2>
 			<p class="text-lg">
 			We offer 4 primary solutions, but they include a lot of important items in themselves. How can each solution help your business? Click on the square to find out more!</p>
 	</div>
-	<div class="grid grid-cols-solutions mt-14 w-full gap-5">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14 w-full gap-5">
 		{solutions.map((solution: ISolution, index) =>
 			(<Solution imgPath={solution.imgPath} name={solution.name} position={index+1} length={solutions.length}></Solution>)
 		)}
