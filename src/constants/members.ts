@@ -2,7 +2,7 @@ import { IMember } from "../interfaces/IMember";
 
 export const members: IMember[] = [
     {
-        name: "Josef Tatícek",
+        name: "Josef Taticek",
         imgPath: "josef-taticek.jpeg",
         email: "josef@decentree.com",
         position: "CEO",
@@ -23,7 +23,7 @@ export const members: IMember[] = [
         linkedin: "https://www.linkedin.com/in/adam-schinzel/"
     },
     {
-        name: "Tomáš Martykan",
+        name: "Tomas Martykan",
         imgPath: "tomas-martykan.jpeg",
         email: "tomas@decentree.com",
         position: "SW Development",
