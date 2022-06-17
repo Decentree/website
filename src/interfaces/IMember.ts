@@ -4,4 +4,5 @@ export interface IMember {
     facebook?: string;
     linkedin?: string;
     imgPath: string;
+    position: string;
 }
