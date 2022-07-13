@@ -6,6 +6,7 @@
 	import Solutions from "../components/modules/index/solutions.astro";
 	import Technologies from "../components/modules/index/technologies.astro";
 	import Team from "../components/modules/index/team.astro";
+	import Cookies from "../components/modules/index/cookies.svelte";
 	import Contact from "../components/modules/index/contact.svelte";
 	import Footer from "../components/elements/shared/footer.astro";
 
@@ -60,6 +61,7 @@
 			+"eady.com/Razk8l9n8fWgXI6i/L"+".js";t=t[0];t.parentNode.insertBefore(g,t)})
 			(document.createElement("script"), document.getElementsByTagName("script"));
 		</script>
+
 	</head>
 	<body>
 		<BaseLayout>
@@ -70,6 +72,7 @@
 			<Technologies/>
 			<Team members={members}/>
 			<Contact client:visible/>
+			<Cookies client:load/>
 		</BaseLayout>
 		<Footer/>
 		<script defer>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
