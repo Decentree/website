@@ -1,36 +1,35 @@
-<GdprBanner cookieName="decentree_cookies"  heading="Keep your cookies under control!" description="This website uses cookies to achieve best user expereince and to help us analyze our traffic" on:analytics={initAnalytics} acceptLabel="Confirm All" settingsLabel="Preferences" showEditIcon={false} choices={choices} />
+<GdprBanner cookieName="decentree_cookies"  heading="Keep your cookies under control!" description="This website uses cookies to achieve best user experience and to help us analyze our traffic" acceptLabel="Confirm" settingsLabel="Preferences" showEditIcon={false} choices={choices} categories={categories} />
 
 <script>
   import GdprBanner from '@beyonk/gdpr-cookie-consent-banner'
 
   const  choices = {
-      necessary: false, 
-      tracking: false, 
-      analytics: {
-          label: "Analytics cookies",
-          description: "Used to control Google Analytics, a 3rd party tool offered by Google to track user behavior.",
-          value: true
-      },
-      marketing: {
-          label: "Marketing cookies",
-          description: "Used for marketing data.",
-          value: true
-      }
+    necessary: false, 
+    tracking: false, 
+    analytics: {
+        label: "Analytics cookies",
+        description: "Used to control Google Analytics, a 3rd party tool offered by Google to track user behavior.",
+        value: true
+    },
+    marketing: {
+        label: "Marketing cookies",
+        description: "Used for marketing data.",
+        value: true
+    }
   }
 
  const categories = {
     analytics: function() {
-      console.log('No analytics cookies specified')
+      const script = document.createElement("script");
+      script.type="text/partytown";
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-37G72ELFWH";
+      document.getElementsByTagName('head')[0].appendChild(script);
     },
     marketing: function() {
       console.log('No marketing cookies specified')
     },
   
 }
-
-  function initAnalytics () {
-    // do something with segment.io or google analytics etc
-  }
 </script>
 
 <style lang="scss">
