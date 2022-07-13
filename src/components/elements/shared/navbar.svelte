@@ -15,7 +15,7 @@ const menuItems = [
 	{ name: "solutions", to: "#solutions"},
 	{ name: "technology", to: "#technology"},
 	{ name: "team", to: "#team"},
-	{ name: "contact", to: "#contact", button: true},
+	{ name: "Book a consultation", to: "https://calendly.com/decentree", blank: true},
 ]
 </script>
 
@@ -27,7 +27,7 @@ const menuItems = [
 		
 		<nav class="gap-8 items-center hidden md:flex">
 			{#each menuItems as item}
-				<a href={item.to} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}">{item.name}</a>
+				<a href={item.to} class="text-sm hover:underline" target={item.blank ? "_blank" : ""}>{item.name}</a>
 			{/each}
 		</nav>
 		<button 
