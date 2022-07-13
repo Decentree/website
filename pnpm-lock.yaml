@@ -3,6 +3,7 @@ dependencies:
   workbox-build: 6.5.3
   workbox-cli: 6.5.3
 devDependencies:
+  '@astrojs/partytown': 0.1.8
   '@astrojs/sitemap': 0.1.0
   '@astrojs/svelte': 0.1.1_sass@1.50.1+svelte@3.47.0
   astro: 1.0.0-beta.17_sass@1.50.1
@@ -87,6 +88,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0yOV1ucOvDyA9Bg1Rs56Zfe8EGtPxBfMReUQTAW/1hLZgIu8WgTCHuTRRT/z7UkjJHX8TiT9XMsUtBOI20cYWQ==
+  /@astrojs/partytown/0.1.8:
+    dependencies:
+      '@builder.io/partytown': 0.4.5
+      mrmime: 1.0.1
+    dev: true
+    resolution:
+      integrity: sha512-jz83ZxhphNbXK3QONg8QIAvbqSJh/N4lqlj6ZhyF/RBI4sXg1bfrOEZEP9kKmHTifL7GfS4N3TzzcrC4bD4lqg==
   /@astrojs/prism/0.4.1:
     dev: true
     engines:
@@ -1265,6 +1273,11 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==
+  /@builder.io/partytown/0.4.5:
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-HcHlmMYSpOxfJ0lFVxgZrvgIjz1Q8knlGuWkBpvjIp68j+xVWg969+sn7BCfyKhcGaYlnVOY/CEBHapQBcl0jw==
   /@emmetio/abbreviation/2.2.3:
     dependencies:
       '@emmetio/scanner': 1.0.0
@@ -4441,6 +4454,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==
+  /mrmime/1.0.1:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==
   /ms/2.1.2:
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
@@ -6523,6 +6542,7 @@ packages:
     resolution:
       integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==
 specifiers:
+  '@astrojs/partytown': ^0.1.8
   '@astrojs/sitemap': ^0.1.0
   '@astrojs/svelte': ^0.1.1
   astro: ^1.0.0-beta.17
