@@ -14,11 +14,11 @@
     "@astrojs/sitemap": "^0.1.0",
     "@astrojs/svelte": "^0.1.1",
     "@beyonk/gdpr-cookie-consent-banner": "^9.0.3",
-    "astro": "^1.0.0-beta.17",
+    "astro": "^1.0.0-beta.69",
     "astro-seo": "^0.5.0",
     "html-minifier-terser": "^7.0.0-alpha.1",
     "sass": "^1.50.1",
-    "svelte": "^3.46.4",
+    "svelte": "^3.49.0",
     "vite-plugin-windicss": "^1.8.4",
     "windicss": "^3.5.1"
   },
