@@ -16,7 +16,7 @@ const menuItems = [
 	{ name: "technology", to: "/#technology"},
 	{ name: "team", to: "/#team"},
 	{ name: "contact", to: "/#contact"},
-	{ name: "Book a consultation", to: "https://calendly.com/decentree", blank: true, button: true},
+	{ name: "book a consultation", to: "https://calendly.com/decentree", blank: true, button: true},
 ]
 </script>
 
