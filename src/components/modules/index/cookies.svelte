@@ -52,7 +52,7 @@
 
     .cookieConsentWrapper {
       z-index: 20;
-      @apply bg-primary-blue;
+      @apply bg-primary-blue bg-opacity-60 backdrop-filter backdrop-blur-sm shadow-md shadow-md; 
     }
 
     .cookieConsentOperations {

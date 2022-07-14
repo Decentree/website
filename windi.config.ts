@@ -10,9 +10,9 @@ export default defineConfig({
       "block w-full py-3 px-4 text-base md:text-lg rounded-md bg-secondary-blue border-2 border-primary-green text-white border-solid placeholder:text-gray-400 focus:outline-secondary-green",
     "spacing-def": "px-mobile md:px-def",
     "btn-primary":
-      "block w-max bg-primary-green hover:bg-secondary-green py-2 md:py-3 px-[12px] md:px-[20px] text-base font-medium uppercase rounded-md tracking-[.22em] transition transition-colors",
+      "block w-max bg-primary-green hover:bg-secondary-green py-2 md:py-3 px-[12px] md:px-[20px] text-base font-medium uppercase rounded-md tracking-[.1rem] transition transition-colors",
     "btn-nav":
-      "block w-max bg-primary-green hover:bg-secondary-green py-1 px-[18px] text-black font-medium text-sm lowercase rounded-md tracking-[.18em] transition transition-colors",
+      "block w-max bg-primary-green hover:bg-secondary-green py-1 px-[18px] text-black font-medium text-sm lowercase rounded-md tracking-[.1rem] transition transition-colors",
   },
   plugins: [
     typography(),
