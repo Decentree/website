@@ -6,12 +6,13 @@
 	import Solutions from "../components/modules/index/solutions.astro";
 	import Technologies from "../components/modules/index/technologies.astro";
 	import Team from "../components/modules/index/team.astro";
+	import Cookies from "../components/modules/index/cookies.svelte";
 	import Contact from "../components/modules/index/contact.svelte";
 	import Footer from "../components/elements/shared/footer.astro";
 
-	import {projects} from "../constants/projects";
-	import {solutions} from "../constants/solutions";
-	import {members} from "../constants/members";
+	import { projects } from "../constants/projects";
+	import { solutions } from "../constants/solutions";
+	import { members } from "../constants/members";
 
 	import { SEO } from "astro-seo";
 	import StructuredData from "../components/elements/shared/structured-data.astro"
@@ -40,6 +41,13 @@
 		<StructuredData/>
 		<link rel="preload" href="/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
+		<script async key="google-analytics" type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-37G72ELFWH"></script>
+		<script key="google-analytics-config" type="text/partytown">
+			  window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-37G72ELFWH');
+		</script>		
 	</head>
 	<body>
 		<BaseLayout>
@@ -50,6 +58,7 @@
 			<Technologies/>
 			<Team members={members}/>
 			<Contact client:visible/>
+			<Cookies client:only/>
 		</BaseLayout>
 		<Footer/>
 		<script defer>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
