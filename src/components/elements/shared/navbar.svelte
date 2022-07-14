@@ -11,11 +11,12 @@ const toggle = () => {
 
 };
 const menuItems = [
-	{ name: "projects", to: "#projects" },
-	{ name: "solutions", to: "#solutions"},
-	{ name: "technology", to: "#technology"},
-	{ name: "team", to: "#team"},
-	{ name: "Book a consultation", to: "https://calendly.com/decentree", blank: true},
+	{ name: "projects", to: "/#projects" },
+	{ name: "solutions", to: "/#solutions"},
+	{ name: "technology", to: "/#technology"},
+	{ name: "team", to: "/#team"},
+	{ name: "contact", to: "/#contact"},
+	{ name: "Book a consultation", to: "https://calendly.com/decentree", blank: true, button: true},
 ]
 </script>
 
@@ -23,11 +24,11 @@ const menuItems = [
 	<header
 		class="inset-0 opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md"
 	>
-		<a href="#" class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] lg:w-[123px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
+		<a href="/#" class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] lg:w-[123px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
 		
 		<nav class="gap-8 items-center hidden md:flex">
 			{#each menuItems as item}
-				<a href={item.to} class="text-sm hover:underline" target={item.blank ? "_blank" : ""}>{item.name}</a>
+				<a href={item.to} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
 			{/each}
 		</nav>
 		<button 
