@@ -23,6 +23,9 @@
     "windicss": "^3.5.1"
   },
   "dependencies": {
+    "node-sass": "^7.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "swiper": "^8.1.4",
     "workbox-build": "^6.5.3",
     "workbox-cli": "^6.5.3"
