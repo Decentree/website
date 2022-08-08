@@ -13,6 +13,7 @@ specifiers:
   prettier-plugin-svelte: ^2.7.0
   sass: ^1.50.1
   svelte: ^3.49.0
+  svelte-simple-modal: ^1.4.1
   swiper: ^8.1.4
   vite-plugin-windicss: ^1.8.4
   windicss: ^3.5.1
@@ -23,6 +24,7 @@ dependencies:
   node-sass: 7.0.1
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
+  svelte-simple-modal: 1.4.1_svelte@3.49.0
   swiper: 8.1.4
   workbox-build: 6.5.3
   workbox-cli: 6.5.3
@@ -6409,6 +6411,14 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.49.0
     dev: true
+
+  /svelte-simple-modal/1.4.1_svelte@3.49.0:
+    resolution: {integrity: sha512-em/uxH1xvQZoXTOq81Kk0u9ltjf/EyQkNiKTQJQmdCygDMqyUfMCFzLnbIQ4ApfV4BcRh6eYbwbCeeWTOyfpsg==}
+    peerDependencies:
+      svelte: ^3.31.2
+    dependencies:
+      svelte: 3.49.0
+    dev: false
 
   /svelte/3.49.0:
     resolution: {integrity: sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==}

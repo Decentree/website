@@ -54,7 +54,7 @@ export const solutions: ISolution[] = [
   {
     name: 'Smart Contracts',
     longDesc:
-      'Smart contracts are computer programs stored on the blockchain. They allows us to convert traditional contracts into digital parallels. Typically a smart contract is then used by some frontend to allow users to interact with it.',
+      'Smart contracts are computer programs stored on the blockchain. They allow us to convert traditional contracts into digital parallels. Typically a smart contract is then used by some frontend to allow users to interact with it.',
     imgPath: 'solutions/blockchain',
     tags: ['Solidity', 'OpenZeppelin', 'Foundry', 'HardHat',],
     steps: [

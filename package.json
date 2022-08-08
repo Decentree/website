@@ -26,6 +26,7 @@
     "node-sass": "^7.0.1",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
+    "svelte-simple-modal": "^1.4.1",
     "swiper": "^8.1.4",
     "workbox-build": "^6.5.3",
     "workbox-cli": "^6.5.3"

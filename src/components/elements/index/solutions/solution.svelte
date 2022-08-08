@@ -18,10 +18,38 @@
     export let steps
 
     let opened = false
+    let prevBodyPosition;
+    let prevBodyOverflow;
+    let prevBodyWidth;
+
+    
+  const disableScroll = () => {
+    scrollY = window.scrollY;
+    prevBodyPosition = document.body.style.position;
+    prevBodyOverflow = document.body.style.overflow;
+    prevBodyWidth = document.body.style.width;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.overflow = 'hidden';
+    document.body.style.width = '100%';
+  };
+
+  const enableScroll = () => {
+    document.body.style.position = prevBodyPosition || '';
+    document.body.style.top = '';
+    document.body.style.overflow = prevBodyOverflow || '';
+    document.body.style.width = prevBodyWidth || '';
+    window.scrollTo(0, scrollY);
+  };
+
+  const openModal = () => {
+    opened = true;
+    disableScroll();
+  }
 </script>
 
 <div>
-  <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution" href="#" on:click|preventDefault={()=>opened = true}>
+  <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution" href="#" on:click|preventDefault={()=>openModal()}>
     <div class="absolute inset-0 w-full h-full flex flex-col justify-end z-1 text-left px-8">
       <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
       <h3 class="my-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
@@ -29,10 +57,10 @@
     <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover rounded-md" alt={name} loading="lazy" fallback="png" />
   </a>
   {#if opened}
-    <SolutionModal bind:opened>
-      <h1 class="text-3xl md:text-5xl mb-2">{name}</h1>
+    <SolutionModal bind:opened on:close={()=>enableScroll()}>
+      <h1 class="text-3xl md:text-5xl mb-4">{name}</h1>
       <p class="text-base md:text-md text-gray-300 mt-0 mb-8">{longDesc}</p>
-      <div class="flex justify-between mt-4 flex-wrap gap-y-6">
+      <div class="flex justify-between mt-8 flex-wrap gap-y-6">
         {#if tags.length > 0}
           <div class="md:w-2/5"> 
             <span class="text-primary-green uppercase font-medium">What We do</span>
