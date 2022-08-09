@@ -74,7 +74,7 @@
         {#if steps.length > 0}
           <div>
             <span class="text-primary-green uppercase font-medium">The process</span>
-            <div class="flex flex-wrap">
+            <div class="flex flex-col md:flex-row flex-wrap gap-8 md:gap-0">
               {#each steps as step, index}
                 <Step index={index} step={step} steps={steps}/>
               {/each}

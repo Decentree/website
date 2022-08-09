@@ -78,11 +78,7 @@ export const solutions: ISolution[] = [
       { label: 'Testing', icon: settingsIcon },
     ],
     images: [
-      {
-        title: 'Kryptoles',
-        label: 'Blockchain, QA, Design, Frontend',
-        src: '/images/kryptoles.png',
-      },
+      
       {
         title: 'IOItrust',
         label: 'Blockchain, QA, Design, Frontend',
