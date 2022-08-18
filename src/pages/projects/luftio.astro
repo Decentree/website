@@ -53,8 +53,7 @@ import Services from "../../components/elements/projects/services.astro";
     <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between">
       <img src="/images/projects/luftio_services.png" class="block w-full md:max-w-[600px] object-cover flex-1"
         alt="Services">
-      <Services tags={["Product management", "Android" , "iOS" , "Frontend" , "Backend" , "IoT" , "Design" ]} />
-
+      <Services tags={["Product management", "Android" , "iOS" , "Frontend" , "Backend" , "IoT" , "Design" ]} links={[{url: "https://dashboard.luftio.com/", tagName: "Web App"}, {url: "https://apps.apple.com/cz/app/luftio/id1551174582?l=cs", tagName: "iOS"}, {url: "https://play.google.com/store/apps/details?id=com.luftio.app&hl=cs&gl=US", tagName: "Android"}]} />
     </section>
     <TextSection index={2} max={3} title="Problem">
       <div class="flex flex-col md:flex-row gap-x-16 md:justify-between">
@@ -75,16 +74,13 @@ import Services from "../../components/elements/projects/services.astro";
     <TextSection index={3} max={3} title="Solution">
       <p>
         The whole product has a two parts and that is software and hardware. So lets start with first one.</p>
-
       <p>We develop a web app that could be called a dashboard because it is really about visualizing data and providing
         recommendations for managers. They can make actions steps such as buy some new plants, open windows before
         regular meetings etc. For employees there is a mobile where they can see the air quality at their workspace and
         by keeping healhy air they collect badges.</p>
-
       <p>We were also behing the hardware engineering where we were making prototype for serial production of circuit
         boards. It was also challening to design 3D model of the box so there will be enought flow of air.
       </p>
-
     </TextSection>
     <section class="spacing-def flex gap-8 mt-8">
       <div class="w-1/2 flex flex-col gap-8">
