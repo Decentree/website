@@ -10,25 +10,25 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^0.1.8",
-    "@astrojs/sitemap": "^0.1.0",
-    "@astrojs/svelte": "^0.1.1",
+    "@astrojs/partytown": "^0.1.9",
+    "@astrojs/sitemap": "^0.1.2",
+    "@astrojs/svelte": "^0.1.5",
     "@beyonk/gdpr-cookie-consent-banner": "^9.0.3",
-    "astro": "^1.0.0-beta.69",
-    "astro-seo": "^0.5.0",
-    "html-minifier-terser": "^7.0.0-alpha.1",
-    "sass": "^1.50.1",
+    "astro": "^1.0.6",
+    "astro-seo": "^0.5.1",
+    "html-minifier-terser": "^7.0.0",
+    "sass": "^1.54.4",
     "svelte": "^3.49.0",
-    "vite-plugin-windicss": "^1.8.4",
-    "windicss": "^3.5.1"
+    "vite-plugin-windicss": "^1.8.7",
+    "windicss": "^3.5.6"
   },
   "dependencies": {
     "node-sass": "^7.0.1",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "svelte-simple-modal": "^1.4.1",
-    "swiper": "^8.1.4",
-    "workbox-build": "^6.5.3",
-    "workbox-cli": "^6.5.3"
+    "swiper": "^8.3.2",
+    "workbox-build": "^6.5.4",
+    "workbox-cli": "^6.5.4"
   }
 }
