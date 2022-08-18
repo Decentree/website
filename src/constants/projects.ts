@@ -19,4 +19,10 @@ export const projects: IProject[] = [
         imagePath: "/images/projects/oio.png",
         url: "/projects/oiotrust"
     },
+    {
+        name: "Kryptoles",
+        category: "Frontend, Blockchain",
+        imagePath: "/images/projects/kryptoles.png",
+        url: "/projects/kryptoles"
+    },
 ]

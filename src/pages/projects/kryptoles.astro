@@ -18,7 +18,7 @@ import Services from "../../components/elements/projects/services.astro";
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <SEO title="OIOtrust | Decentree - Developer studio" canonical="https://decentree.com"
+    <SEO title="Kryptoles | Decentree - Developer studio" canonical="https://decentree.com"
         description="Decentree is a young company that specializes in the development of mobile, online, and blockchain apps. At Decentree we believe in the ability of technology to enhance people's lives on a daily basis."
         extend={{ link: [{ rel: "sitemap" , href: "/sitemap.xml" }, { rel: "favicon" , href: "/favicon.ico" },
         {rel:"manifest", href:"/manifest.json"}], }} openGraph={{ basic: { title: "Decentree - Developer studio" ,
@@ -39,56 +39,55 @@ import Services from "../../components/elements/projects/services.astro";
 <body>
     <BaseLayout>
         <Navbar client:media="(max-width: 800px)" />
-        <Heading title="OIOtrust" imagePath="/images/projects/oio_heading.png">Do you like hackathons? Well we do! One
-            of our projects that we done was on the ETH Prague 2022 called OIOtrust and this app is like a last will but
-            in the Web 3.0 space. Fully decentralized and secure. Maybe in the year 2080 it will be pretty normal to
-            make last will like this and let the blockchain do everything for you.</Heading>
-        <TextSection index={1} max={3} title="About OIOtrust">
+        <Heading title="Kryptoles" imagePath="/images/projects/kryptoles_heading.jpg">Imagine a forest where each tree
+            is represented as a NFT and you can own it? That is right, we partner up with a cryptocurrency expert
+            Altlift and developed a marketplace for their own forest where each tree has its own chip and it is an
+            actual NFT. Isn’t that cool?
+        </Heading>
+        <TextSection index={1} max={3} title="About Kryptoles">
             <p>
-                OIOtrust was a project on the ETH Prague 2022 hackathon, where people from Decentree shape a team with
-                few other individuals to create a tool for securing assets over a long time and keep generational wealth
-                secured sustainably. The main use case is inheritance, which is deposited in the trust .
+                For starters kryptoles in english means crypto forest and it is a shared project of Altlift and
+                Decentree. This NFT marketplace allows users to connect their wallet and buy trees in forest as a NFTs.
+                Location of trees is then visible on google map with details such as image, price etc.
             </p>
         </TextSection>
         <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between">
-            <img src="/images/projects/oio.png" class="block w-full md:max-w-[600px] object-cover flex-1"
-                alt="Services">
-            <Services tags={[ "Frontend" , "Smart Contracts" , "QA" , "Design" ]} links={[{url: "https://oiotrust.netlify.app/", tagName: "Web App"}]} />
-            
+            <Services tags={[ "Frontend" , "Backend" , "Smart Contracts" , "QA" , "Design" ]}
+                links={[{url: "https://kryptoles.cz/" , tagName: "Web App" }]} />
+            <img src="/images/projects/kryptoles.png" class="block w-full md:max-w-[600px] object-cover flex-1"
+                alt="Problem">
         </section>
         <TextSection index={2} max={3} title="Problem">
             <div class="flex flex-col md:flex-row gap-x-16 md:justify-between">
                 <div class="min-w-[380px]">
                     <p class="!mt-2">
-                        Do you what exactly is a last will ? A last will and testament is a legal document that
-                        communicates a person's final wishes pertaining to assets and dependents.
+                        Company Altlift bought a part of a forest some time ago. There was not a real usage of this
+                        forest. And what would you do as an expert in cryptocurrencies? Build a NFT marketplace where
+                        each tree will be represented as a NFT and has its own location.
+
+
                     </p>
-                    <p>This document is mostly drafted by some lawyer and costs hundreds to thousands of dollars. Now
-                        imagine a solution where you don’t need any lawyer because we have smart contracts for that and
-                        it is free of charge.</p>
-                    <p>All your crypto is safe in the smart contract.</p>
+                    <p>We were really exited about this project because it combines blockchain with real objects on the
+                        world.</p>
                 </div>
-                <img src="/images/projects/oio_problem.jpg" class="block w-full object-cover flex-1 !mt-0"
+                <img src="/images/projects/kryptoles_problem.jpg" class="block w-full object-cover flex-1 !mt-0"
                     alt="Problem">
             </div>
         </TextSection>
         <TextSection index={3} max={3} title="Solution">
             <p>
-                WIth this dapp it is possible to create a decentralized trust (last will) that could distribute your
-                crypto wealth. Each trust is represented by a NFT, which is held by the trustee. You can specify the
-                starting date, the frequency of the payouts and the payment amount. We are secured by smart contracts.
-                There is no human involved, so nobody can steal the trust money. And everybody can trigger the contracts
-                so the system is doesn’t rely on any authority for it to work.
+                We developed a NFT marketplace on Polygon using Moralis for backend and also wrote some smart contracts
+                in Solidity using Foundry toolchain for the development and also testing. For authetication you can
+                directly use your wallet or sign in with a magic link.
+
+
             </p>
             <p>
-                The system is powered by a smart contract managing the trust, written in Solidity. We used the Foundry
-                toolchain to develop and test it. The contract extends ERC721 from OpenZeppelin. We built the frontend
-                with React and Ethers.js that allows users to view, create and update their trusts. We’re not using any
-                off-chain backend, everything is loaded directly from the chain.
+                NFTs can also bought in auction meaning that they are sold to the highest bidder.
             </p>
         </TextSection>
         <section class="spacing-def mt-8">
-            <img src="/images/projects/oio_1.png" class="w-full block" alt="oiotrust">
+            <img src="/images/projects/kryptoles_1.jpg" class="w-full block" alt="kryptoles">
         </section>
         <Contact client:visible />
         <Cookies client:only />
