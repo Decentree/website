@@ -2,8 +2,9 @@ import { defineConfig } from 'astro/config';
 import WindiCSS from 'vite-plugin-windicss';
 import svelte from '@astrojs/svelte';
 import sitemap from '@astrojs/sitemap';
-
 import partytown from "@astrojs/partytown";
+
+import turbolinks from "@astrojs/turbolinks";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,5 +13,5 @@ export default defineConfig({
   vite: {
     plugins: [WindiCSS()]
   },
-  integrations: [svelte(), sitemap(), partytown()]
+  integrations: [svelte(), sitemap(), partytown(), turbolinks()]
 });

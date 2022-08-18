@@ -13,6 +13,7 @@
     "@astrojs/partytown": "^0.1.9",
     "@astrojs/sitemap": "^0.1.2",
     "@astrojs/svelte": "^0.1.5",
+    "@astrojs/turbolinks": "^0.1.4",
     "@beyonk/gdpr-cookie-consent-banner": "^9.0.3",
     "astro": "^1.0.6",
     "astro-seo": "^0.5.1",

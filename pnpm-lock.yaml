@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/partytown': ^0.1.9
   '@astrojs/sitemap': ^0.1.2
   '@astrojs/svelte': ^0.1.5
+  '@astrojs/turbolinks': ^0.1.4
   '@beyonk/gdpr-cookie-consent-banner': ^9.0.3
   astro: ^1.0.6
   astro-seo: ^0.5.1
@@ -33,6 +34,7 @@ devDependencies:
   '@astrojs/partytown': 0.1.9
   '@astrojs/sitemap': 0.1.2
   '@astrojs/svelte': 0.1.5_6mezugq55gsf3aaw2rw3fh4jo4
+  '@astrojs/turbolinks': 0.1.4
   '@beyonk/gdpr-cookie-consent-banner': 9.0.3
   astro: 1.0.6_sass@1.54.4
   astro-seo: 0.5.1
@@ -187,6 +189,13 @@ packages:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@astrojs/turbolinks/0.1.4:
+    resolution: {integrity: sha512-p6CBacV+wHGtRlfRJ1kSu+mxHm5sFe3oN71WQ3kkDEU00x6KwWC7C+Ok3NLI7EZXHdBs4SglXJdZeY7vLfmk+g==}
+    deprecated: This integration is no longer maintained.
+    dependencies:
+      turbolinks: 5.2.0
     dev: true
 
   /@astrojs/webapi/1.0.0:
@@ -6751,6 +6760,10 @@ packages:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
     dependencies:
       safe-buffer: 5.2.1
+
+  /turbolinks/5.2.0:
+    resolution: {integrity: sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==}
+    dev: true
 
   /tweetnacl/0.14.5:
     resolution: {integrity: sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==}
