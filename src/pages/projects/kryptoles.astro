@@ -54,7 +54,7 @@ import Services from "../../components/elements/projects/services.astro";
         <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between">
             <Services tags={[ "Frontend" , "Backend" , "Smart Contracts" , "QA" , "Design" ]}
                 links={[{url: "https://kryptoles.cz/" , tagName: "Web App" }]} />
-            <img src="/images/projects/kryptoles.png" class="block w-full md:max-w-[600px] object-cover flex-1"
+            <img src="/images/projects/kryptoles.png" class="block w-full md:max-w-[600px] object-cover flex-1" loading="lazy"
                 alt="Problem">
         </section>
         <TextSection index={2} max={3} title="Problem">
@@ -64,13 +64,11 @@ import Services from "../../components/elements/projects/services.astro";
                         Company Altlift bought a part of a forest some time ago. There was not a real usage of this
                         forest. And what would you do as an expert in cryptocurrencies? Build a NFT marketplace where
                         each tree will be represented as a NFT and has its own location.
-
-
                     </p>
                     <p>We were really exited about this project because it combines blockchain with real objects on the
                         world.</p>
                 </div>
-                <img src="/images/projects/kryptoles_problem.jpg" class="block w-full object-cover flex-1 !mt-0"
+                <img src="/images/projects/kryptoles_problem.jpg" class="block w-full object-cover flex-1 !mt-0" loading="lazy"
                     alt="Problem">
             </div>
         </TextSection>
@@ -79,15 +77,13 @@ import Services from "../../components/elements/projects/services.astro";
                 We developed a NFT marketplace on Polygon using Moralis for backend and also wrote some smart contracts
                 in Solidity using Foundry toolchain for the development and also testing. For authetication you can
                 directly use your wallet or sign in with a magic link.
-
-
             </p>
             <p>
                 NFTs can also bought in auction meaning that they are sold to the highest bidder.
             </p>
         </TextSection>
         <section class="spacing-def mt-8">
-            <img src="/images/projects/kryptoles_1.jpg" class="w-full block" alt="kryptoles">
+            <img src="/images/projects/kryptoles_1.jpg" class="w-full block" alt="kryptoles" loading="lazy">
         </section>
         <Contact client:visible />
         <Cookies client:only />
