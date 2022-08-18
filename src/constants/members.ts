@@ -9,24 +9,17 @@ export const members: IMember[] = [
         linkedin: "https://www.linkedin.com/in/joseftaticek/"
     },
     {
-        name: "Martin Malhocky",
-        imgPath: "martin-malhocky.jpeg",
-        email: "martin@decentree.com",
-        position: "Sales",
-        linkedin: "https://www.linkedin.com/in/martin-malhocky/"
-    },
-    {
         name: "Adam Schinzel",
         imgPath: "adam-schinzel.jpeg",
         email: "adam@decentree.com",
-        position: "SW Development",
+        position: "CTO",
         linkedin: "https://www.linkedin.com/in/adam-schinzel/"
     },
     {
         name: "Tomas Martykan",
         imgPath: "tomas-martykan.jpeg",
         email: "tomas@decentree.com",
-        position: "SW Development",
+        position: "Head of Engineering",
         linkedin: "https://www.linkedin.com/in/tomas-martykan/"
     }
 ]
