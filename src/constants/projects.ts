@@ -17,6 +17,6 @@ export const projects: IProject[] = [
         name: "OIOtrust",
         category: "Frontend, Blockchain",
         imagePath: "/images/projects/oio.png",
-        url: "/projects/oio"
+        url: "/projects/oiotrust"
     },
 ]
