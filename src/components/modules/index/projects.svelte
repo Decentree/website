@@ -16,8 +16,7 @@
 </script>
 
 <h2 class="spacing-def pt-15 text-3xl md:text-4xl">Our Projects</h2>
-<section class="grid-def bg-primary-blue relative">
-	<span id="projects" class="absolute -top-40"></span>
+<section class="grid-def bg-primary-blue relative" id="projects">
 	<div class="element-def py-4">
 		<Swiper
 			spaceBetween={20}

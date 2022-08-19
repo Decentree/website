@@ -4,8 +4,6 @@ import svelte from '@astrojs/svelte';
 import sitemap from '@astrojs/sitemap';
 import partytown from "@astrojs/partytown";
 
-import turbolinks from "@astrojs/turbolinks";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://decentree.com",
@@ -13,5 +11,5 @@ export default defineConfig({
   vite: {
     plugins: [WindiCSS()]
   },
-  integrations: [svelte(), sitemap(), partytown(), turbolinks()]
+  integrations: [svelte(), sitemap(), partytown()]
 });

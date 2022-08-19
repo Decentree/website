@@ -8,11 +8,13 @@ specifiers:
   '@beyonk/gdpr-cookie-consent-banner': ^9.0.3
   astro: ^1.0.6
   astro-seo: ^0.5.1
+  flamethrower-router: 0.0.0-meme.6
   html-minifier-terser: ^7.0.0
   node-sass: ^7.0.1
   prettier: ^2.7.1
   prettier-plugin-svelte: ^2.7.0
   sass: ^1.54.4
+  smoothscroll-polyfill: ^0.4.4
   svelte: ^3.49.0
   svelte-simple-modal: ^1.4.1
   swiper: ^8.3.2
@@ -22,9 +24,11 @@ specifiers:
   workbox-cli: ^6.5.4
 
 dependencies:
+  flamethrower-router: 0.0.0-meme.6
   node-sass: 7.0.1
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
+  smoothscroll-polyfill: 0.4.4
   svelte-simple-modal: 1.4.1_svelte@3.49.0
   swiper: 8.3.2
   workbox-build: 6.5.4
@@ -3455,6 +3459,10 @@ packages:
       pkg-dir: 4.2.0
     dev: true
 
+  /flamethrower-router/0.0.0-meme.6:
+    resolution: {integrity: sha512-WB2/8z9F+fDn2bMQYJPGKIS780510tiyCBUC2706BH068moTWajhlQmCTNIaxk2bR8xfIZNfCTuKifDU6S0w9A==}
+    dev: false
+
   /forever-agent/0.6.1:
     resolution: {integrity: sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==}
 
@@ -6279,6 +6287,10 @@ packages:
   /smart-buffer/4.2.0:
     resolution: {integrity: sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
+
+  /smoothscroll-polyfill/0.4.4:
+    resolution: {integrity: sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==}
+    dev: false
 
   /socks-proxy-agent/6.2.1:
     resolution: {integrity: sha512-a6KW9G+6B3nWZ1yB8G7pJwL3ggLy1uTzKAgCb7ttblwqdz9fMGJUuTy3uFzEP48FAs9FLILlmzDlE2JJhVQaXQ==}

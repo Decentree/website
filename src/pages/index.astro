@@ -1,66 +1,66 @@
 ---
-	import BaseLayout from "../components/layouts/base.astro";
-	import Hero from "../components/modules/index/hero.astro";
-	import Navbar from "../components/elements/shared/navbar.svelte";
-	import Projects from "../components/modules/index/projects.svelte";
-	import Solutions from "../components/modules/index/solutions.astro";
-	import Technologies from "../components/modules/index/technologies.astro";
-	import Team from "../components/modules/index/team.astro";
-	import Cookies from "../components/modules/index/cookies.svelte";
-	import Contact from "../components/modules/index/contact.svelte";
-	import Footer from "../components/elements/shared/footer.astro";
+import BaseLayout from "../components/layouts/base.astro";
+import Hero from "../components/modules/index/hero.astro";
+import Navbar from "../components/elements/shared/navbar.svelte";
+import Projects from "../components/modules/index/projects.svelte";
+import Solutions from "../components/modules/index/solutions.astro";
+import Technologies from "../components/modules/index/technologies.astro";
+import Team from "../components/modules/index/team.astro";
+import Cookies from "../components/modules/index/cookies.svelte";
+import Contact from "../components/modules/index/contact.svelte";
+import Footer from "../components/elements/shared/footer.astro";
 
-	import { projects } from "../constants/projects";
-	import { solutions } from "../constants/solutions";
-	import { members } from "../constants/members";
+import { projects } from "../constants/projects";
+import { solutions } from "../constants/solutions";
+import { members } from "../constants/members";
 
-	import { SEO } from "astro-seo";
-	import StructuredData from "../components/elements/shared/structured-data.astro"
+import { SEO } from "astro-seo";
+import StructuredData from "../components/elements/shared/structured-data.astro"
 
 ---
+
 <html lang="en" class="bg-primary-blue">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<SEO
-			title="Decentree - Developer studio"
-			canonical="https://decentree.com"
-			description="Decentree is a young company that specializes in the development of mobile, online, and blockchain apps. At Decentree we believe in the ability of technology to enhance people's lives on a daily basis." 
-			extend={{
-   				link: [{ rel: "sitemap", href: "/sitemap.xml" }, { rel: "favicon", href: "/favicon.ico" }, {rel:"manifest", href:"/manifest.json"}],					
-			 }}
-			openGraph={{
-				basic: {
-					title: "Decentree - Developer studio", 
-					type: "website",
-					url: "https://decentree.com",
-					image: ""
-				}
-			}}
-		/>
-		<StructuredData/>
-		<link rel="preload" href="/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
-		<script async key="google-analytics" type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-37G72ELFWH"></script>
-		<script key="google-analytics-config" type="text/partytown">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<SEO title="Decentree - Developer studio" canonical="https://decentree.com"
+		description="Decentree is a young company that specializes in the development of mobile, online, and blockchain apps. At Decentree we believe in the ability of technology to enhance people's lives on a daily basis."
+		extend={{ link: [{ rel: "sitemap" , href: "/sitemap.xml" }, { rel: "favicon" , href: "/favicon.ico" },
+		{rel:"manifest", href:"/manifest.json"}], }} openGraph={{ basic: { title: "Decentree - Developer studio" ,
+		type: "website" , url: "https://decentree.com" , image: "" } }} />
+	<StructuredData />
+	<link rel="preload" href="/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
+	<script async key="google-analytics" type="text/partytown"
+		src="https://www.googletagmanager.com/gtag/js?id=G-37G72ELFWH"></script>
+	<script key="google-analytics-config" type="text/partytown">
 			  window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
 				gtag('js', new Date());
 				gtag('config', 'G-37G72ELFWH');
-		</script>		
-	</head>
-	<body>
-		<BaseLayout>
-			<Navbar client:media="(max-width: 800px)"/>
-			<Hero/>
-			<Projects projects={projects} client:load/>
-			<Solutions solutions={solutions}/>
-			<Technologies/>
-			<Team members={members}/>
-			<Contact client:visible/>
-			<Cookies client:only/>
-		</BaseLayout>
-		<Footer/>
-		<script defer>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
-	</body>
+		</script>
+</head>
+
+<body>
+	<BaseLayout>
+		<Navbar client:load />
+		<Hero />
+		<Projects projects={projects} client:load />
+		<Solutions solutions={solutions} />
+		<Technologies />
+		<Team members={members} />
+		<Contact client:visible />
+		<Cookies client:only />
+	</BaseLayout>
+	<Footer />
+	<script
+		defer>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
+</body>
+
 </html>
+
+<script>
+	import flamethrower from 'flamethrower-router';
+	const router = flamethrower({ prefetch: 'visible' });
+</script>
