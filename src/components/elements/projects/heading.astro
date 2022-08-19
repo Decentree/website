@@ -1,0 +1,8 @@
+---
+const {title, imagePath} = Astro.props
+---
+<div class="spacing-def py-20">
+    <h1 class="text-center text-5xl">{title}</h1>
+    <p class="text-base"><slot/></p>
+    <img src={imagePath} class="w-full mt-8 min-h-[400px] object-cover" alt="ESL">
+</div>

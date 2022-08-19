@@ -1,34 +1,61 @@
 <script>
+import {onMount} from "svelte"
 import { slide } from 'svelte/transition'
 import { quintInOut } from 'svelte/easing'
 
-let header;
-let scrolled = false;
+import smoothscroll from 'smoothscroll-polyfill'
+
+
+
+const scrollTo = (elementId) => {
+	if(window.location.pathname.length > 2)
+    	window.location = '/#' + elementId
+	
+
+	
+    window.scroll({
+      top:
+        document.getElementById(elementId).offsetTop,
+      left: 0,
+      behavior: 'smooth',
+    })
+
+	opened = false
+
+    if (elementId !== 'hero')
+      window.history.replaceState(null, null, '#' + elementId)
+  }
+
+  onMount(() => {
+    smoothscroll.polyfill()
+	if(window.location.hash.length > 1) scrollTo(window.location.hash.slice(1,window.location.hash.length));
+  })
+
 let opened = false;
 
 const toggle = () => {
 	opened = !opened;
-
 };
+
 const menuItems = [
-	{ name: "projects", to: "/#projects" },
-	{ name: "solutions", to: "/#solutions"},
-	{ name: "technology", to: "/#technology"},
-	{ name: "team", to: "/#team"},
-	{ name: "contact", to: "/#contact"},
+	{ name: "projects", to: "projects" },
+	{ name: "solutions", to: "solutions"},
+	{ name: "technology", to: "technology"},
+	{ name: "team", to: "team"},
+	{ name: "contact", to: "contact"},
 	{ name: "book a consultation", to: "https://calendly.com/decentree", blank: true, button: true},
 ]
 </script>
 
 <div class="fixed top-0 w-full z-30">
 	<header
-		class="inset-0 opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md"
+		class="inset-0 opacity-100 z-30 w-full bg-primary-blue md:bg-opacity-50 py-4 spacing-def flex justify-between items-center backdrop-filter backdrop-blur-sm shadow-md" id="header"
 	>
-		<a href="/#" class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] lg:w-[123px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
+		<a href="/#" on:click|preventDefault={()=>scrollTo("hero")} class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] lg:w-[123px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
 		
 		<nav class="gap-8 items-center hidden md:flex">
 			{#each menuItems as item}
-				<a href={item.to} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
+				<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
 			{/each}
 		</nav>
 		<button 
@@ -73,7 +100,7 @@ const menuItems = [
 			"
 		>
 			{#each menuItems as item}
-				<a href={item.to} class="text-lg block my-4" on:click={(e)=>toggle()}>{item.name}</a>
+				<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-lg block my-4">{item.name}</a>
 			{/each}
 		</nav>
 	{/if}

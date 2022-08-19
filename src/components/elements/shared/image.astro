@@ -17,7 +17,7 @@ const {path, className, alt, width, height, loading, style, fallback} = Astro.pr
 	<source srcset={"/images/" + path + '.avif'} type="image/avif" />
 	<source srcset={"/images/" + path + '.webp'} type="image/webp" />
 	<img
-		src={"/images/" + path + '.' + fallback || "jpeg"}
+		src={"/images/" + path + '.' + (fallback || "jpeg")}
 		alt={alt}
 		class={className || ""}
 		draggable={false}

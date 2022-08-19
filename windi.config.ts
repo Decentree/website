@@ -39,6 +39,7 @@ export default defineConfig({
         primary: {
           green: "#6BB891",
           blue: "#020025",
+          darker: "#000321"
         },
         secondary: {
           blue: "#090235",
