@@ -7,6 +7,7 @@
     import Tag from "../../shared/tag.svelte";
     import SolutionImage from "../../shared/solutionimage.svelte";
     import SmartContracts from "../solutions/smartcontracts.svelte"
+    import SmallArrow from "../../shared/icons/small_arrow.svelte"
     
     export let position
     export let longDesc
@@ -51,8 +52,9 @@
 <div>
   <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution" href="#" on:click|preventDefault={()=>openModal()}>
     <div class="absolute inset-0 w-full h-full flex flex-col justify-end z-1 text-left px-8">
+      <SmallArrow className="text-gray-300 w-5"/>
       <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
-      <h3 class="my-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
+      <h3 class="mt-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
     </div>
     <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover rounded-md" alt={name} loading="lazy" fallback="png" />
   </a>
@@ -101,7 +103,7 @@
     .solution {
         transition: filter 0.3s ease-in-out;
         &:hover {
-            filter: drop-shadow(3px 2px 10px #43efff);
+            filter: drop-shadow(3px 2px 10px #6BB891);
         }
     }
 </style>
