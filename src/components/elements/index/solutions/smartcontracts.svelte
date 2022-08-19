@@ -1,3 +1,4 @@
+
 <script>
     import { likeIcon, linkIcon, fileIcon } from "../../../../constants/icons"
 </script>
@@ -18,6 +19,5 @@
             <div class="w-16 h-16 md:w-24 md:h-24 flex flex-col justify-center items-center bg-gray-700 rounded-full "><span class="transform md:scale-120 flex flex-col justify-center items-center">{@html fileIcon}</span> </div>
             <span class="text-base mt-2 block text-center font-medium">Certificate</span>
         </div>
-         
     </div>
 </div>
