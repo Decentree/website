@@ -10,7 +10,8 @@ import smoothscroll from 'smoothscroll-polyfill'
 const scrollTo = (elementId) => {
 	if(window.location.pathname.length > 2)
     	window.location = '/#' + elementId
-	opened = false
+	
+
 	
     window.scroll({
       top:
@@ -18,6 +19,8 @@ const scrollTo = (elementId) => {
       left: 0,
       behavior: 'smooth',
     })
+
+	opened = false
 
     if (elementId !== 'hero')
       window.history.replaceState(null, null, '#' + elementId)
@@ -97,7 +100,7 @@ const menuItems = [
 			"
 		>
 			{#each menuItems as item}
-				<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-lg block my-4" on:click={(e)=>toggle()}>{item.name}</a>
+				<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-lg block my-4">{item.name}</a>
 			{/each}
 		</nav>
 	{/if}
