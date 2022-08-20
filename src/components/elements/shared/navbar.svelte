@@ -5,8 +5,6 @@ import { quintInOut } from 'svelte/easing'
 
 import smoothscroll from 'smoothscroll-polyfill'
 
-
-
 const scrollTo = (elementId) => {
 	if(window.location.pathname.length > 2)
     	window.location = '/#' + elementId
@@ -53,13 +51,17 @@ const menuItems = [
 	>
 		<a href="/#" on:click|preventDefault={()=>scrollTo("hero")} class="flex flex-col justify-center"><img class="w-[108px] md:w-[113px] lg:w-[123px] h-auto" src="/images/logos/decentree.png" alt="Logo" draggable="false" width="429" height="87"/></a>
 		
-		<nav class="gap-8 items-center hidden md:flex">
+		<nav class="gap-8 items-center hidden lg:flex">
 			{#each menuItems as item}
-				<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
+				{#if item.blank}
+					<a href={item.to} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
+				{:else}
+					<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
+				{/if}
 			{/each}
 		</nav>
 		<button 
-			class="hamburger md:hidden bg-transparent border-none"
+			class="hamburger lg:hidden bg-transparent border-none"
 			class:active={opened}
 			aria-controls="mobile-nav"
 			aria-expanded={opened}
@@ -91,12 +93,12 @@ const menuItems = [
 				h-screen
 				z-0
 				left-0
-				top-[50px]
+				top-[61px]
 				w-full
 				bg-primary-blue
 				spacing-def
 				py-12
-				md:hidden
+				lg:hidden
 			"
 		>
 			{#each menuItems as item}

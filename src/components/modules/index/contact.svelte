@@ -24,8 +24,8 @@
 	<form action="/email" class="w-full spacing-def md:max-w-5/7 mt-4 z-1" method="post" on:submit|preventDefault={onSubmit}>
 		<input type="text" placeholder="Name" class="main-input my-4" name="name" aria-label="Name" required/>
 		<input type="email" placeholder="Email" class="main-input my-4" name="email" aria-label="Email" required/>
-		<textarea placeholder="Message" class="main-input" name="message" aria-label="Message" required/>
-		<button class="btn-primary text-primary-blue w-full mt-4 border-none flex justify-center {error ? 'bg-red-500' : ''} transition transition-colors" type="submit" disabled={loading || error || sent}>
+		<textarea placeholder="Message" class="main-input max-w-7/7" name="message" aria-label="Message" required/>
+		<button class="btn-primary text-primary-blue w-full mt-4 border-none flex justify-center {error ? 'bg-red-500' : ''} transition transition-colors cursor-pointer" type="submit" disabled={loading || error || sent}>
 			{#if loading}
 				Sending..
 			{:else if error} Error occured
