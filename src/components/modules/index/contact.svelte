@@ -13,7 +13,7 @@
 </script>
 
 <section class="text-center flex flex-col items-center py-16 relative overflow-y-hidden" id="contact">
-	<img src="/images/stars-decoration.svg" class="z-0 absolute top-0 opacity-80 w-full" alt="Stars" draggable={false} loading="lazy">
+	<img src="/images/stars-decoration.svg" class="z-0 absolute top-0 opacity-80 w-full pointer-events-none" alt="Stars" draggable={false} loading="lazy">
 	<div class="md:max-w-3/5 px-8 md:px-12">
 		<h2 class="text-4xl md:text-5xl my-2">Contact</h2>
 		<p class="text-lg">
