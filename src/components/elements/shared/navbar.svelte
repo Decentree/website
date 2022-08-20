@@ -54,7 +54,7 @@ const menuItems = [
 		<nav class="gap-8 items-center hidden lg:flex">
 			{#each menuItems as item}
 				{#if item.blank}
-					<a href={item.to} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
+					<a href={item.to} class="text-sm {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
 				{:else}
 					<a href={"/#" + item.to} on:click|preventDefault={()=>scrollTo(item.to)} class="text-sm hover:underline {item.button ? 'btn-nav' : ''}" target={item.blank ? "_blank" : ""}>{item.name}</a>
 				{/if}
