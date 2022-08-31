@@ -26,8 +26,12 @@
 			slidesPerView={2}
 			breakpoints={breakpoints}
 		>	
-			{#each projects as project}
-				<SwiperSlide><Project project={project}/></SwiperSlide>
+			{#each projects as project,index}
+				<SwiperSlide>
+					<div  >
+						<Project project={project}/>
+					</div>
+				</SwiperSlide>
 			{/each}
 		</Swiper>
 	</div>

@@ -6,5 +6,5 @@ export interface ISolution {
   steps?: Array<{label: string; icon: string}>;
   tags?: string[];
   longDesc: string;
-  images?: {title: string; label: string; src: string}[]
+  images?: {title: string; label: string; src: string, link: string}[]
 }
