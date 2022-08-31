@@ -42,11 +42,13 @@ export const solutions: ISolution[] = [
       {
         title: 'ESL',
         label: 'Design, Frontend, QA',
+        link: "/projects/esl",
         src: '/images/esl_web.png',
       },
       {
         title: 'Luftio',
         label: 'PM, Design, Frontend',
+        link: "/projects/luftio",
         src: '/images/luftio_web.png',
       },
     ],
@@ -80,9 +82,10 @@ export const solutions: ISolution[] = [
     images: [
      
       {
-        title: 'IOItrust',
+        title: 'IOItrusßt',
         label: 'Blockchain, QA, Design, Frontend',
         src: '/images/ioitrust.png',
+        link: "/projects/ioitrust",
       },
     ],
   },

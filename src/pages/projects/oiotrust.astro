@@ -11,6 +11,8 @@ import Heading from "../../components/elements/projects/heading.astro";
 import TextSection from "../../components/elements/projects/text-section.astro";
 import Services from "../../components/elements/projects/services.astro";
 
+
+import "aos/dist/aos.css";
 ---
 
 <html lang="en" class="bg-primary-blue">
@@ -52,9 +54,11 @@ import Services from "../../components/elements/projects/services.astro";
         </TextSection>
         <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between">
             <img src="/images/projects/oio.png" class="block w-full md:max-w-[600px] object-cover flex-1" loading="lazy"
-                alt="Services">
-            <Services tags={[ "Frontend" , "Smart Contracts" , "QA" , "Design" ]}
-                links={[{url: "https://oiotrust.netlify.app/" , tagName: "Web App" }]} />
+                alt="Services"  data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+            <div data-aos="fade" data-aos-duration="600">
+                <Services tags={[ "Frontend" , "Smart Contracts" , "QA" , "Design" ]}
+                    links={[{url: "https://oiotrust.netlify.app/" , tagName: "Web App" }]} />
+            </div>
 
         </section>
         <TextSection index={2} max={3} title="Problem">
@@ -70,7 +74,7 @@ import Services from "../../components/elements/projects/services.astro";
                     <p>All your crypto is safe in the smart contract.</p>
                 </div>
                 <img src="/images/projects/oio_problem.jpg" class="block w-full object-cover flex-1 !mt-0"
-                    loading="lazy" alt="Problem">
+                    loading="lazy" alt="Problem"  data-aos="fade" data-aos-duration="700" data-aos-delay="100">
             </div>
         </TextSection>
         <TextSection index={3} max={3} title="Solution">
@@ -102,5 +106,8 @@ import Services from "../../components/elements/projects/services.astro";
 </html>
 <script>
 	import flamethrower from 'flamethrower-router';
-	const router = flamethrower();
+	import AOS from "aos";
+
+	const router = flamethrower({ prefetch: 'visible' });
+	AOS.init()
 </script>

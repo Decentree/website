@@ -8,6 +8,6 @@
 		</p>
   </div>
 	<div class="grid items-center justify-items-stretch gap-10 spacing-def w-full justify-evenly mt-4 z-1" style="grid-template-columns: repeat(auto-fill, 130px);">
-		{Array(12).fill(0).map((item, index) => (<img class="object-contain h-min" src={"/images/technologies/" + "logos" + (index+1) + ".png"} alt="logo" draggable={false} loading="lazy"/>))}
+		{Array(12).fill(0).map((item, index) => (<img class="object-contain h-min" src={"/images/technologies/" + "logos" + (index+1) + ".png"} alt="logo" draggable={false} loading="lazy" data-aos="fade" data-aos-delay={(index)*100} data-aos-duration="300"/>))}
 	</div>
 </section>

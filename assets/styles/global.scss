@@ -11,3 +11,9 @@
 .element-def {
   @apply col-mobile md:col-def;
 }
+
+[data-aos="zoom-y-out"] {
+  transform: scaleX(1.02);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
