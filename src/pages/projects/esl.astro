@@ -11,6 +11,7 @@ import Heading from "../../components/elements/projects/heading.astro";
 import TextSection from "../../components/elements/projects/text-section.astro";
 import Services from "../../components/elements/projects/services.astro";
 
+import "aos/dist/aos.css";
 ---
 
 <html lang="en" class="bg-primary-blue">
@@ -52,9 +53,11 @@ import Services from "../../components/elements/projects/services.astro";
         is: "Did the job once but well is ultimately more efficient, faster and much cheaper."
       </p>
     </TextSection>
-    <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between">
-      <Services tags={["iOS", "Android" , "Frontend" , "Backend" , "QA" , "Design" ]} />
-      <img src="/images/projects/esl.png" class="block w-full md:max-w-[600px] object-cover flex-1" loading="lazy"
+    <section class="spacing-def my-16 flex flex-col gap-8 flex-wrap md:flex-row md:justify-between" >
+      <div  data-aos="fade" data-aos-duration="600">
+        <Services tags={["iOS", "Android" , "Frontend" , "Backend" , "QA" , "Design" ]} />
+      </div>
+      <img src="/images/projects/esl.png" class="block w-full md:max-w-[600px] object-cover flex-1" loading="lazy" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200"
         alt="Problem">
     </section>
     <TextSection index={2} max={3} title="Problem">
@@ -80,7 +83,7 @@ import Services from "../../components/elements/projects/services.astro";
             building such a online system.
           </p>
         </div>
-        <img src="/images/projects/esl_problem.jpg" class="block w-full object-cover flex-1 !mt-0" alt="Problem" loading="lazy">
+        <img src="/images/projects/esl_problem.jpg" class="block w-full object-cover flex-1 !mt-0" alt="Problem" loading="lazy" data-aos="fade" data-aos-duration="700" data-aos-delay="100">
       </div>
     </TextSection>
     <TextSection index={3} max={3} title="Solution">
@@ -125,7 +128,11 @@ import Services from "../../components/elements/projects/services.astro";
 </body>
 
 </html>
+
 <script>
 	import flamethrower from 'flamethrower-router';
-	const router = flamethrower();
+	import AOS from "aos";
+
+	const router = flamethrower({ prefetch: 'visible' });
+	AOS.init({once: true})
 </script>
