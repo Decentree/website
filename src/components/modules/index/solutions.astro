@@ -17,12 +17,12 @@ const { solutions } = Astro.props as { solutions: ISolution[] };
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14 w-full gap-5">
 		{solutions.map((solution, index) =>
-		(<div data-aos="fade-down" data-aos-delay={(index)*200} data-aos-duration="700">
+		(
 			<Solution imgPath={solution.imgPath} name={solution.name} position={index+1} length={solutions.length}
 				steps={solution.steps || []} tags={solution.tags || []} images={solution.images || []}
 				longDesc={solution.longDesc} client:visible>
 			</Solution>
-		</div>)
+		)
 		)}
 	</div>
 </section>
