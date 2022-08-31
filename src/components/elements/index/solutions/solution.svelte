@@ -48,9 +48,8 @@
     disableScroll();
   }
 </script>
-
 <div>
-  <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution" href="#" on:click|preventDefault={()=>openModal()}>
+  <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution"  on:click|preventDefault={()=>openModal()} data-aos="fade-down" data-aos-duration="700">
     <div class="absolute inset-0 w-full h-full flex flex-col justify-end z-1 text-left px-8">
       <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
       <h3 class="mt-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
