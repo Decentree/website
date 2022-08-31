@@ -52,19 +52,17 @@
 <div>
   <a class="block min-h-[350px] md:min-h-[450px] w-full bg-secondary-blue rounded-md relative solution" href="#" on:click|preventDefault={()=>openModal()}>
     <div class="absolute inset-0 w-full h-full flex flex-col justify-end z-1 text-left px-8">
-     
       <span class="text-primary-green font-bold text-lg">{position}/{length}</span>
       <h3 class="mt-2 text-3xl uppercase max-w-[100px] min-h-[100px]">{name}</h3>
       <SmallArrow className="text-gray-300 w-5 -mt-12 mb-5 block"/>
     </div>
-   
     <Image path={imgPath} className="inset-0 absolute w-full h-full object-cover rounded-md" alt={name} loading="lazy" fallback="png" />
   </a>
   {#if opened}
     <SolutionModal bind:opened on:close={()=>enableScroll()}>
       <h1 class="text-3xl md:text-5xl mb-4">{name}</h1>
-      <p class="text-base md:text-md text-gray-300 mt-0 mb-8">{longDesc}</p>
-      <div class="flex justify-between mt-8 flex-wrap gap-y-6">
+      <p class="text-base md:text-md text-gray-300 mt-0 mb-15">{longDesc}</p>
+      <div class="flex justify-between mt-8 flex-wrap gap-y-6 mb-20">
         {#if tags.length > 0}
           <div class="md:w-2/5"> 
             <span class="text-primary-green uppercase font-medium">What We do</span>

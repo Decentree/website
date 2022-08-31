@@ -1,20 +1,18 @@
 ---
 import Solution from "../../elements/index/solutions/solution.svelte";
-import Email from "../../elements/shared/icons/email.astro"
-import { tableIcon } from "../../../constants/icons"
 import { ISolution } from "../../../interfaces/ISolution";
 const { solutions } = Astro.props as { solutions: ISolution[] };
 ---
 
-<section class="bg-primary-blue relative text-center px-8 md:px-12 py-20 flex flex-col items-center" id="solutions">
+<section class="bg-primary-blue relative text-center px-8 md:px-12 py-20 flex flex-col items-center"
+	id="services">
 
 	<img src="/images/solutions-bg.jpeg" class=" z-0 absolute -top-[170px] opacity-80 mix-blend-exclusion "
 		style="filter: blur(4px)" alt="Solution" draggable={false} loading="lazy">
 	<div class="md:max-w-2/3">
-		<h2 class="text-4xl md:text-5xl my-2">Our Solutions</h2>
+		<h2 class="text-4xl md:text-5xl my-2">Our services</h2>
 		<p class="text-lg">
-			We offer 4 primary solutions, but they include a lot of important items in themselves. How can each solution
-			help
+			We offer 4 primary services, but they include a lot of important items in themselves. How can each solution help
 			your business? Click on the square to find out more!</p>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14 w-full gap-5">
