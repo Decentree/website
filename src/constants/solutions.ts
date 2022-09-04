@@ -1,5 +1,12 @@
 import { ISolution } from './../interfaces/ISolution';
-import { checkIcon, codeIcon, likeIcon, linkIcon, settingsIcon, tableIcon } from './icons';
+import {
+  checkIcon,
+  codeIcon,
+  likeIcon,
+  linkIcon,
+  settingsIcon,
+  tableIcon,
+} from './icons';
 export const solutions: ISolution[] = [
   {
     name: 'Mobile Apps',
@@ -17,11 +24,13 @@ export const solutions: ISolution[] = [
       {
         title: 'ESL',
         label: 'Design, iOS,  Android, QA',
+        link: '/projects/esl',
         src: '/images/esl_mobile.png',
       },
       {
         title: 'Luftio',
         label: 'PM, IoT, iOS, Android',
+        link: '/projects/esl',
         src: '/images/luftio_mobile.png',
       },
     ],
@@ -42,13 +51,13 @@ export const solutions: ISolution[] = [
       {
         title: 'ESL',
         label: 'Design, Frontend, QA',
-        link: "/projects/esl",
+        link: '/projects/esl',
         src: '/images/esl_web.png',
       },
       {
         title: 'Luftio',
         label: 'PM, Design, Frontend',
-        link: "/projects/luftio",
+        link: '/projects/luftio',
         src: '/images/luftio_web.png',
       },
     ],
@@ -58,10 +67,10 @@ export const solutions: ISolution[] = [
     longDesc:
       'Smart contracts are computer programs stored on the blockchain. They allow us to convert traditional contracts into digital parallels. Typically a smart contract is then used by some frontend to allow users to interact with it.',
     imgPath: 'solutions/blockchain',
-    tags: ['Solidity', 'OpenZeppelin', 'Foundry', 'HardHat',],
+    tags: ['Solidity', 'OpenZeppelin', 'Foundry', 'HardHat'],
     steps: [
       { label: 'Specifications', icon: tableIcon },
-     
+
       { label: 'Development', icon: codeIcon },
       { label: 'Testing', icon: settingsIcon },
       { label: 'External audit', icon: checkIcon },
@@ -80,12 +89,11 @@ export const solutions: ISolution[] = [
       { label: 'Testing', icon: settingsIcon },
     ],
     images: [
-     
       {
         title: 'IOItrusßt',
         label: 'Blockchain, QA, Design, Frontend',
         src: '/images/ioitrust.png',
-        link: "/projects/ioitrust",
+        link: '/projects/oiotrust',
       },
     ],
   },
