@@ -30,7 +30,7 @@ export const solutions: ISolution[] = [
       {
         title: 'Luftio',
         label: 'PM, IoT, iOS, Android',
-        link: '/projects/esl',
+        link: '/projects/luftio',
         src: '/images/luftio_mobile.png',
       },
     ],
