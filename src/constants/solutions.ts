@@ -19,7 +19,7 @@ export const solutions: ISolution[] = [
       { label: 'Development', icon: codeIcon },
       { label: 'Testing', icon: settingsIcon },
     ],
-    tags: ['Android', 'iOS', 'React Native (cross-platform)'],
+    tags: ['Android', 'iOS', 'React Native'],
     images: [
       {
         title: 'ESL',
@@ -67,7 +67,7 @@ export const solutions: ISolution[] = [
     longDesc:
       'Smart contracts are computer programs stored on the blockchain. They allow us to convert traditional contracts into digital parallels. Typically a smart contract is then used by some frontend to allow users to interact with it.',
     imgPath: 'solutions/blockchain',
-    tags: ['Solidity', 'OpenZeppelin', 'Foundry', 'HardHat'],
+    tags: ['Solidity', 'Rust', 'Foundry', 'OpenZeppelin', 'Chainlink'],
     steps: [
       { label: 'Specifications', icon: tableIcon },
 
@@ -79,9 +79,9 @@ export const solutions: ISolution[] = [
   {
     name: 'dApps',
     longDesc:
-      'Decentralized applications, also called dapps are smart contract-powered versions of apps that run on the blockchain. They are mix of a classic Web 2.0 software developement and Web 3.0 software development.',
+      'Decentralized applications, also called dapps are smart contract-powered versions of apps that run on the blockchain. They are mix of a classic Web2 software developement and Web3 software development.',
     imgPath: 'solutions/defi',
-    tags: ['React', 'Next.js', 'Moralis', 'Web3Auth', 'Tatum'],
+    tags: ['React', 'Next.js', 'Moralis', 'Alchemy', 'Web3Auth', 'Metaplex'],
     steps: [
       { label: 'Design', icon: tableIcon },
       { label: 'Blockchain', icon: linkIcon },

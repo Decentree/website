@@ -104,7 +104,7 @@
 
 <style lang="scss">
     .solution {
-        transition: filter 0.3s ease-in-out;
+        transition: filter 0.1s ease-in-out;
         &:hover {
             filter: drop-shadow(3px 2px 10px #6BB891);
         }

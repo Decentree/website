@@ -1,10 +1,10 @@
 ---
-import FacebookIcon from "../../shared/icons/facebook.astro";
+import TwitterIcon from "../../shared/icons/twitter.astro";
 import LinkedinIcon from "../../shared/icons/linkedin.astro";
 
 import {IMember} from "../../../../interfaces/IMember";
 
-const {name, email, facebook, linkedin, imgPath, position} = Astro.props as IMember;
+const {name, email, twitter, linkedin, imgPath, position} = Astro.props as IMember;
 
 ---
 <div class="bg-secondary-blue rounded-sm max-w-[230px] md:max-w-[250px] ">
@@ -16,8 +16,9 @@ const {name, email, facebook, linkedin, imgPath, position} = Astro.props as IMem
             <a class="text-sm hover:underline text-primary-green my-0" href={"mailto:" + email}>{email}</a>
             
         </div>
-        <div class="flex flex-wrap justify-center gap-x-8 mt-4">
-            {linkedin && <a href={linkedin} target="_blank" aria-label="linkedin"><LinkedinIcon /></a>}
+        <div class="flex flex-wrap justify-center gap-x-3 mt-4">
+            <a href={linkedin} target="_blank" aria-label="linkedin"><LinkedinIcon /></a>
+            <a href={twitter} target="_blank" aria-label="linkedin"><TwitterIcon /></a>
         </div>
     </div>
 </div>
