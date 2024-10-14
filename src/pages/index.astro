@@ -2,7 +2,6 @@
 import BaseLayout from "../components/layouts/base.astro";
 import Hero from "../components/modules/index/hero.astro";
 import Navbar from "../components/elements/shared/navbar.svelte";
-import Projects from "../components/modules/index/projects.svelte";
 import WhyUs from "../components/elements/index/whyus.astro";
 import Solutions from "../components/modules/index/solutions.astro";
 import Technologies from "../components/modules/index/technologies.astro";
@@ -11,7 +10,6 @@ import Cookies from "../components/modules/index/cookies.svelte";
 import Contact from "../components/modules/index/contact.svelte";
 import Footer from "../components/elements/shared/footer.astro";
 
-import { projects } from "../constants/projects";
 import { solutions } from "../constants/solutions";
 import { members } from "../constants/members";
 
@@ -50,7 +48,6 @@ import "aos/dist/aos.css";
 	<BaseLayout>
 		<Navbar client:load />
 		<Hero />
-		<Projects projects={projects} client:load />
 		<Solutions solutions={solutions} />
 		<Technologies />
 		<WhyUs/>

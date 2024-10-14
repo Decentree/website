@@ -36,12 +36,10 @@ const toggle = () => {
 };
 
 const menuItems = [
-	{ name: "projects", to: "projects" },
 	{ name: "services", to: "services"},
 	{ name: "technology", to: "technology"},
 	{ name: "team", to: "team"},
 	{ name: "contact", to: "contact"},
-	{ name: "book a consultation", to: "https://calendly.com/decentree", blank: true, button: true},
 ]
 </script>
 

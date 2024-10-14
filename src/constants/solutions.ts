@@ -20,20 +20,7 @@ export const solutions: ISolution[] = [
       { label: 'Testing', icon: settingsIcon },
     ],
     tags: ['Android', 'iOS', 'React Native'],
-    images: [
-      {
-        title: 'ESL',
-        label: 'Design, iOS,  Android, QA',
-        link: '/projects/esl',
-        src: '/images/esl_mobile.png',
-      },
-      {
-        title: 'Luftio',
-        label: 'PM, IoT, iOS, Android',
-        link: '/projects/luftio',
-        src: '/images/luftio_mobile.png',
-      },
-    ],
+    images: [],
   },
   {
     name: 'Web Apps',
@@ -47,20 +34,7 @@ export const solutions: ISolution[] = [
       { label: 'Development', icon: codeIcon },
       { label: 'Testing', icon: settingsIcon },
     ],
-    images: [
-      {
-        title: 'ESL',
-        label: 'Design, Frontend, QA',
-        link: '/projects/esl',
-        src: '/images/esl_web.png',
-      },
-      {
-        title: 'Luftio',
-        label: 'PM, Design, Frontend',
-        link: '/projects/luftio',
-        src: '/images/luftio_web.png',
-      },
-    ],
+    images: [],
   },
   {
     name: 'Smart Contracts',
@@ -88,13 +62,6 @@ export const solutions: ISolution[] = [
       { label: 'Frontend', icon: codeIcon },
       { label: 'Testing', icon: settingsIcon },
     ],
-    images: [
-      {
-        title: 'IOItrusßt',
-        label: 'Blockchain, QA, Design, Frontend',
-        src: '/images/ioitrust.png',
-        link: '/projects/oiotrust',
-      },
-    ],
+    images: [],
   },
 ];
