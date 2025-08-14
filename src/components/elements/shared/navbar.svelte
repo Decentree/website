@@ -38,7 +38,6 @@ const toggle = () => {
 const menuItems = [
 	{ name: "services", to: "services"},
 	{ name: "technology", to: "technology"},
-	{ name: "team", to: "team"},
 	{ name: "contact", to: "contact"},
 ]
 </script>
